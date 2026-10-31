@@ -1,0 +1,7 @@
+protocol,operation,payload_bytes,runs,median_requests_per_s,min_requests_per_s,max_requests_per_s,total_errors
+grpc,GET,1000,5,29485,21829,29728,0
+rest,GET,1000,5,27076,24532,27444,0
+grpc,POST,1000,5,22849,20553,27395,0
+rest,POST,1000,5,21271,20769,22760,0
+grpc,GET,64000,5,5822,4257,6164,0
+rest,GET,64000,5,9928,9007,10977,0

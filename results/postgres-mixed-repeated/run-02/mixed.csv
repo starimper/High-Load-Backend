@@ -1,0 +1,3 @@
+protocol,workload,threads,requests_per_s,p50_ms,p99_ms,errors
+grpc,80% GET 1KB + 15% GET 64KB + 5% POST 1KB,8,13698,0.444,1.729,0
+rest,80% GET 1KB + 15% GET 64KB + 5% POST 1KB,8,12065,0.466,1.832,0

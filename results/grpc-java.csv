@@ -1,0 +1,5 @@
+adapter,operation,payload_bytes,n,mean_ms,p50_ms,p95_ms
+generated-grpc-java,GET,1000,500,0.855,0.798,1.199
+generated-grpc-java,POST,1000,500,0.650,0.618,0.882
+generated-grpc-java,GET,64000,200,0.708,0.680,0.919
+generated-grpc-java,POST,64000,200,0.891,0.810,1.093

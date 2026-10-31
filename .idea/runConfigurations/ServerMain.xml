@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ServerMain" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="kz.kbtu.pastebin.ServerMain" />
+    <module name="pastebin-protocol" />
+    <option name="PROGRAM_PARAMETERS" value="--grpc-port 9090 --rest-port 8080 --threads 16 --postgres-url jdbc:postgresql://localhost:5432/pastebin --postgres-user postgres" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

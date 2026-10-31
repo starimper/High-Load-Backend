@@ -1,0 +1,7 @@
+protocol,operation,payload_bytes,threads,requests_per_s,p50_ms,p99_ms,errors
+rest,GET,1000,8,27444,0.281,0.468,0
+grpc,GET,1000,8,29728,0.258,0.460,0
+rest,POST,1000,8,21271,0.355,0.616,0
+grpc,POST,1000,8,22849,0.329,0.588,0
+rest,GET,64000,8,9928,0.768,1.944,0
+grpc,GET,64000,8,5734,1.335,2.642,0

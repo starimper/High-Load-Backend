@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package pastebin.v1;
+
+option java_multiple_files = true;
+option java_package = "kz.kbtu.pastebin.grpc.pb";
+option java_outer_classname = "PastebinProto";
+
+// Service interface of Pastebin (SIS #2). Same two operations as the REST API in SIS #1:
+//   POST /v1/pastes        <->  CreatePaste   (Idempotency-Key header <-> "idempotency-key" metadata)
+//   GET  /v1/pastes/{key}  <->  GetPaste
+service Pastebin {
+  rpc CreatePaste (CreatePasteRequest) returns (CreatePasteResponse);
+  rpc GetPaste (GetPasteRequest) returns (GetPasteResponse);
+}
+
+message CreatePasteRequest {
+  string content = 1;      // text, up to 1 MB
+  int64 ttl_seconds = 2;   // 600 .. 2_592_000
+}
+
+message CreatePasteResponse {
+  string key = 1;
+  string url = 2;
+  string expires_at = 3;   // ISO-8601 UTC, same as the JSON field
+}
+
+message GetPasteRequest {
+  string key = 1;
+}
+
+message GetPasteResponse {
+  string key = 1;
+  string content = 2;
+  string created_at = 3;
+  string expires_at = 4;
+}

@@ -1,0 +1,7 @@
+protocol,client_mode,logical_creates,succeeded,failed,snippets_stored,duplicates,attempts,retries,mean_ms,p99_ms
+grpc,no_retry,2000,1449,551,1711,0,2000,0,0.574,1.537
+grpc,retry_with_key,2000,1991,9,2000,0,2744,744,1.803,19.410
+grpc,retry_without_key,2000,1984,16,2337,337,2753,753,1.671,21.057
+rest,no_retry,2000,1410,590,1696,0,2000,0,0.710,1.891
+rest,retry_with_key,2000,1984,16,1998,0,2730,730,1.880,22.059
+rest,retry_without_key,2000,1984,16,2367,367,2765,765,1.859,22.834

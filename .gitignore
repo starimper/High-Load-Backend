@@ -1,0 +1,9 @@
+target/
+*.log
+*.err
+smoke-results/
+smoke-throughput/
+results/server.log
+results/*-debug.log
+.idea/workspace.xml
+.idea/httpRequests/
